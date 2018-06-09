@@ -1,8 +1,13 @@
-![docker pulls](https://img.shields.io/docker/pulls/jupyter/base-notebook.svg) ![docker stars](https://img.shields.io/docker/stars/jupyter/base-notebook.svg) [![](https://images.microbadger.com/badges/image/jupyter/base-notebook.svg)](https://microbadger.com/images/jupyter/base-notebook "jupyter/base-notebook image metadata")
+# Blastn and Jupyter Docker source image
 
-# Base Jupyter Notebook Stack
+This repo contains source files for jupyter notebook which we pull from https://github.com/jupyter/docker-stacks/tree/master/base-notebook.
+We modified the jupyter-notebook's Dockerfile inorder to add the blastn repository and created an ipython notebook based on the blastn tutorial from https://github.com/edamame-course/BLAST-tutorial/blob/master/running-BLAST.md. 
 
-Please visit the documentation site for help using and contributing to this image and others.
+To use this image:
+1) clone the repo
+2) run this command: docker build -t blastn-jupyter-docker .
+3) then once it finishes building run this: docker run -p 8888:8888 blastn-jupyter-docker
+4) connect to the jupyter notebook in your browser using the link generated
+5) navigate and run the jupyter notebook located in /work/
 
-* [Jupyter Docker Stacks on ReadTheDocs](http://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
-* [Selecting an Image :: Core Stacks :: jupyter/base-notebook](http://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-base-notebook)
+[![blastn-jupyter-notebook](/images/blast-jupyter-notebook.png)]()
