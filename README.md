@@ -1,7 +1,9 @@
 # Blastn and Jupyter Docker source image
 
-This repo contains source files for Jupyter notebook (pulled from https://github.com/jupyter/docker-stacks/tree/master/base-notebook).  
-We modified the Jupyter-notebook's Dockerfile in order to add the blastn genomics tool and then created an IPython notebook based on the blastn tutorial from https://github.com/edamame-course/BLAST-tutorial/blob/master/running-BLAST.md. 
+This repo contains source files for a Dockerfile which contains two tools:
+ - Jupyter notebook (pulled from https://github.com/jupyter/docker-stacks/tree/master/base-notebook).  
+ - blastn genomics tool 
+ - IPython notebook based on the blastn tutorial from https://github.com/edamame-course/BLAST-tutorial/blob/master/running-BLAST.md. 
 
 To use this image:
 1) clone the repo
